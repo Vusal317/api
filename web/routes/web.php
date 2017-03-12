@@ -11,4 +11,17 @@
 |
 */
 
-Route::get('/login', 'ApiController@postLogin');
+Route::post('/login', 'ApiController@postLogin');
+
+Route::get('/user-info/{id}', 'ApiController@getUserInfo');
+
+Route::get('/cust-list/{id}', 'ApiController@custList');
+
+Route::get('/uni-ant-codes-by-cat', 'ApiController@codesByCat');
+
+Route::get('/add', 'ApiController@postAdd');
+
+
+
+
+
